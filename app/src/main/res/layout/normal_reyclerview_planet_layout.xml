@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp">
+
+    <TextView
+        android:id="@+id/planetName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="serif"
+        android:text="Planet Name"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/planetDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="DistanceFromSun"
+        app:layout_constraintStart_toStartOf="@+id/planetName"
+        app:layout_constraintTop_toBottomOf="@+id/planetName" />
+
+    <TextView
+        android:id="@+id/planetGravity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="PlanetGravity"
+        app:layout_constraintStart_toStartOf="@+id/planetDistance"
+        app:layout_constraintTop_toBottomOf="@+id/planetDistance" />
+
+    <TextView
+        android:id="@+id/planetDiameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="serif"
+        android:text="Planet Diameter"
+        app:layout_constraintStart_toStartOf="@id/planetGravity"
+        app:layout_constraintTop_toBottomOf="@id/planetGravity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
